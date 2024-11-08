@@ -418,21 +418,9 @@
                 </div>
             </div>
             <canvas id="render">CANVAS_NOT_SUPPORTED</canvas>
-		  <script>
-    const registerButton = document.getElementById('register');
-    const usernameInput = document.getElementById('username');
-    const passwordInput = document.getElementById('password');
-
-    registerButton.addEventListener('click',   
- () => {
-      usernameInput.classList.remove('hidden');
-      passwordInput.classList.remove('hidden');
-    });
-  </script>
-  <div id="loginDiv" class="hidden">
+   <div id="loginDiv" class="hidden">
   <h2 id="logo" class="noselect" style="modMsg",>GUEST AND LOGIN DO NOT WORK, ONLY REGISTER.</h2>
   <h2 id="logo" class="noselect" style="modMsg",>register a new account go ingame and press any key for the crash</h2>
-  <button id="play" class="hidden">Play</button>
   <div id="loginData">
     <form id="loginForm" action="javascript:void(0)" method="post">
       <input id="username" class="login-input hidden" value="" placeholder="Username" autocomplete="username">
@@ -443,6 +431,18 @@
     <button id="login" form="loginForm" class="hidden">Login</button>
     <button id="register" form="loginForm">Register</button>
   </div>
+
+  <script>
+    const registerButton = document.getElementById('register');
+    const usernameInput = document.getElementById('username');
+    const passwordInput = document.getElementById('password');
+
+    registerButton.addEventListener('click',   
+ () => {
+      usernameInput.classList.remove('hidden');
+      passwordInput.classList.remove('hidden');
+    });
+  </script>
 </div>
             <div id="changingRoom" class="hidden">
                 <button id="backToLogout">Back</button>
@@ -453,12 +453,13 @@
             </div>
             <br>
             <div id="logoutDiv" class="hidden">
-<button id="changingRoomBtn" class="hidden">Changing Room</button>
-<br><br>
-<button id="logout" class="hidden">Logout</button>
+                <button id="changingRoomBtn">Changing Room</button>
                 <br><br>
-            </div> 
-	</div>
+                
+                <button id="logout">Logout</button>
+                <br><br>
+                <button id="play">Play</button>
+            </div>
             <div id="links">
                 <!--<a href="https://skap.io" target="_blank" title="The REAL Skap.io">
                     <img src="https://skap.io/favicon.ico" width="50" height="50" />
