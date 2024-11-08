@@ -419,20 +419,14 @@
             </div>
             <canvas id="render">CANVAS_NOT_SUPPORTED</canvas>
         </div>
-	  </div>
-
-  <script>
-
-    registerButton.addEventListener('click',   
- () => {
+     <div id="loginDiv" class="hidden">
+  <h2 id="logo" class="noselect" style="modMsg",>GUEST AND LOGIN DO NOT WORK, ONLY REGISTER.</h2>
+  <h2 id="logo" class="noselect" style="modMsg",>register a new account go ingame and press any key for the crash</h2>
+	       <script>
       usernameInput.classList.remove('hidden');
       passwordInput.classList.remove('hidden');
     });
   </script>
-</div>
-     <div id="loginDiv" class="hidden">
-  <h2 id="logo" class="noselect" style="modMsg",>GUEST AND LOGIN DO NOT WORK, ONLY REGISTER.</h2>
-  <h2 id="logo" class="noselect" style="modMsg",>register a new account go ingame and press any key for the crash</h2>
 <button id="play" class="hidden">Play</button>
   <div id="loginData">
     <form id="loginForm" action="javascript:void(0)" method="post">
@@ -446,10 +440,11 @@
   </div>
 
   <script>
+	  registerButton.addEventListener('click',   
     const registerButton = document.getElementById('register');
     const usernameInput = document.getElementById('username');
     const passwordInput = document.getElementById('password');
-
+	  ()
   </script>
 </div>
             <div id="changingRoom" class="hidden">
