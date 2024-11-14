@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(to bottom, #483D8B, #BB8FCE, #F72585, #FFCA3A);
+  background: linear-gradient(to bottom, #66c6f4, #f1aab7, #efeeee, #f1aab7, #66c6f4);
   height: 100vh; /* Sets the height to 100% of the viewport */
   margin: 0; /* Removes default margins */
 }
