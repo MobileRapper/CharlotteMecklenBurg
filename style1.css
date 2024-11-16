@@ -1,5 +1,32 @@
 body {
-  background: linear-gradient(to bottom, #66c6f4, #f1aab7, #efeeee, #f1aab7, #66c6f4);
-  height: 100vh; /* Sets the height to 100% of the viewport */
-  margin: 0; /* Removes default margins */
+  margin: 0;
+  height: 100vh;
+  animation: rainbowFlash 10s infinite;
+}
+
+@keyframes rainbowFlash {
+  0% {
+    background-color: #8B0000; // Dark Red
+  }
+  14.28% {
+    background-color: #FFA500; // Dark Orange
+  }
+  28.56% {
+    background-color: #FFFF00; // Yellow
+  }
+  42.84% {
+    background-color: #008000; // Dark Green
+  }
+  57.12% {
+    background-color: #0000FF; // Blue
+  }
+  71.40% {
+    background-color: #4B0082; // Dark Indigo
+  }
+  85.68% {
+    background-color: #EE82EE; // Violet
+  }
+  100% {
+    background-color: #8B0000; // Dark Red
+  }
 }
