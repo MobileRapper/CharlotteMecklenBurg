@@ -21,7 +21,6 @@ document.addEventListener('keypress', (event) => {
   });
 
 
-
 var keysDown = new Set();
 document.addEventListener("keydown", e => {
     if (e.repeat) return;
